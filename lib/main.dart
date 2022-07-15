@@ -36,9 +36,19 @@ class MyApp extends StatelessWidget {
               const Text(
                 'Edsson Madrigal',
                 style: TextStyle(
+                    fontFamily: 'Pacifico',
                     fontSize: 20.0,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
+              ),
+              Text(
+                'IT ARCHITECT',
+                style: TextStyle(
+                    fontFamily: 'Exo',
+                    fontSize: 15.0,
+                    letterSpacing: 2.5,
+                    color: Colors.teal.shade100,
+                    fontWeight: FontWeight.normal),
               ),
             ],
           ),
