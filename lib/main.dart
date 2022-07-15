@@ -15,37 +15,31 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
             //mainAxisSize: MainAxisSize.max,
             //verticalDirection: VerticalDirection.up,
             //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            //crossAxisAlignment: CrossAxisAlignment.stretch,
+
             children: [
-              Container(
-                  height: 100,
-                  width: 300,
-                  //margin: const EdgeInsets.only(left: 30.0),
-                  padding: const EdgeInsets.all(20.0),
-                  color: Colors.green,
-                  child: const Text('Hello')),
-              const SizedBox(height: 30),
-              Container(
-                  height: 100,
-                  width: 100,
-                  //margin: const EdgeInsets.only(left: 30.0),
-                  padding: const EdgeInsets.all(20.0),
-                  color: Colors.blue,
-                  child: const Text('Hello')),
-              Container(
-                  height: 100,
-                  width: 100,
-                  //margin: const EdgeInsets.only(left: 30.0),
-                  padding: const EdgeInsets.all(20.0),
-                  color: Colors.red,
-                  child: const Text('Hello')),
-              //Container(width: double.infinity, height: 10),
+              CircleAvatar(
+                radius: 50.0,
+                child: ClipOval(
+                  child: Image.asset(
+                    'images/edsson.jpeg',
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+              const Text(
+                'Edsson Madrigal',
+                style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
             ],
           ),
         ),
